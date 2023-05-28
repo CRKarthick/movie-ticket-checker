@@ -37,7 +37,7 @@ const Theaters = ({ data }) => {
                     </p>
                     <hr />
                     <div className="row">
-                      <div className="col-3">
+                      <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="card border-success mb-3">
                           <div
                             className="card-header text-truncate"
@@ -50,7 +50,7 @@ const Theaters = ({ data }) => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-3">
+                      <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="card border-success mb-3">
                           <div
                             className="card-header text-truncate"
@@ -63,7 +63,7 @@ const Theaters = ({ data }) => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-3">
+                      <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="card border-success mb-3">
                           <div
                             className="card-header text-truncate"
@@ -76,7 +76,7 @@ const Theaters = ({ data }) => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-3">
+                      <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="card border-success mb-3">
                           <div
                             className="card-header text-truncate"
