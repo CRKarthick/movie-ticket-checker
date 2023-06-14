@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Theaters = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="container my-5">
       <div className="card">
@@ -32,62 +33,90 @@ const Theaters = ({ data }) => {
                         </div>
                       </div>
                     </h5>
-                    <p class="card-text">
-                      <small class="text-muted">{theatre.address}</small>
+                    <p className="card-text">
+                      <small className="text-muted">{theatre.address}</small>
                     </p>
                     <hr />
                     <div className="row">
                       <div className="col-lg-3 col-md-6 col-sm-12">
-                        <div className="card border-success mb-3">
-                          <div
-                            className="card-header text-truncate"
-                            title={theatre.show1_movie}
-                          >
-                            {theatre.show1_movie}
+                        <Link
+                          to={`/:${theatre.show1_movie}&${theatre.theatre_name}&${theatre.show1_time}`}
+                          style={{ textDecoration: "none", color: "unset" }}
+                        >
+                          <div className="card border-success mb-3">
+                            <div
+                              className="card-header text-truncate"
+                              title={theatre.show1_movie}
+                            >
+                              {theatre.show1_movie}
+                            </div>
+                            <div className="card-body text-success text-center">
+                              <h5 className="card-title">
+                                {theatre.show1_time}
+                              </h5>
+                            </div>
                           </div>
-                          <div className="card-body text-success text-center">
-                            <h5 className="card-title">{theatre.show1_time}</h5>
-                          </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="col-lg-3 col-md-6 col-sm-12">
-                        <div className="card border-success mb-3">
-                          <div
-                            className="card-header text-truncate"
-                            title={theatre.show2_movie}
-                          >
-                            {theatre.show2_movie}
+                        <Link
+                          to={`/:${theatre.show2_movie}&${theatre.theatre_name}&${theatre.show2_time}`}
+                          style={{ textDecoration: "none", color: "unset" }}
+                        >
+                          <div className="card border-success mb-3">
+                            <div
+                              className="card-header text-truncate"
+                              title={theatre.show2_movie}
+                            >
+                              {theatre.show2_movie}
+                            </div>
+                            <div className="card-body text-success text-center">
+                              <h5 className="card-title">
+                                {theatre.show2_time}
+                              </h5>
+                            </div>
                           </div>
-                          <div className="card-body text-success text-center">
-                            <h5 className="card-title">{theatre.show2_time}</h5>
-                          </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="col-lg-3 col-md-6 col-sm-12">
-                        <div className="card border-success mb-3">
-                          <div
-                            className="card-header text-truncate"
-                            title={theatre.show3_movie}
-                          >
-                            {theatre.show3_movie}
+                        <Link
+                          to={`/:${theatre.show3_movie}&${theatre.theatre_name}&${theatre.show3_time}`}
+                          style={{ textDecoration: "none", color: "unset" }}
+                        >
+                          <div className="card border-success mb-3">
+                            <div
+                              className="card-header text-truncate"
+                              title={theatre.show3_movie}
+                            >
+                              {theatre.show3_movie}
+                            </div>
+                            <div className="card-body text-success text-center">
+                              <h5 className="card-title">
+                                {theatre.show3_time}
+                              </h5>
+                            </div>
                           </div>
-                          <div className="card-body text-success text-center">
-                            <h5 className="card-title">{theatre.show3_time}</h5>
-                          </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="col-lg-3 col-md-6 col-sm-12">
-                        <div className="card border-success mb-3">
-                          <div
-                            className="card-header text-truncate"
-                            title={theatre.show4_movie}
-                          >
-                            {theatre.show4_movie}
+                        <Link
+                          to={`/:${theatre.show4_movie}&${theatre.theatre_name}&${theatre.show4_time}`}
+                          style={{ textDecoration: "none", color: "unset" }}
+                        >
+                          <div className="card border-success mb-3">
+                            <div
+                              className="card-header text-truncate"
+                              title={theatre.show4_movie}
+                            >
+                              {theatre.show4_movie}
+                            </div>
+                            <div className="card-body text-success text-center  ">
+                              <h5 className="card-title">
+                                {theatre.show4_time}
+                              </h5>
+                            </div>
                           </div>
-                          <div className="card-body text-success text-center  ">
-                            <h5 className="card-title">{theatre.show4_time}</h5>
-                          </div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

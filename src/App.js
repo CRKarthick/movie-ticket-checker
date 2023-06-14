@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Alert from "./components/Alert";
 import Theaters from "./components/Theaters";
 import NotFound from "./components/NotFound";
+import Movie from "./components/Movie";
 
 function App() {
   const [mailId, setMailId] = useState("");
@@ -31,6 +32,10 @@ function App() {
       {Object.keys(data).length > 0 && (
         <Routes>
           <Route path="/" element={<Theaters data={data} />} />
+          <Route
+            path="/:movieDetails"
+            element={<Movie data={data} userMailId={mailId} />}
+          />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       )}

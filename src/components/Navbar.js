@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setAppMailId }) => {
   const [userMailId, setUserMailId] = useState("");
   return (
     <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        <div className="navbar-brand">MOVIE TICKET CHECKER</div>
+        {/* <div className="navbar-brand">MOVIE TICKET CHECKER</div> */}
+        <Link to="/" className="navbar-brand">
+          MOVIE TICKET CHECKER
+        </Link>
         <form
           onSubmit={(e) => {
             e.preventDefault();
